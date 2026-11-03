@@ -21,12 +21,14 @@
     console.error("lp-types JSON parse failed", err);
   }
 
-  let answerScrollTimer;
+  let autoAdvanceTimer;
   let furthestStep = 0;
   let step = 0; // 0-3 questions, then show content
   let answers = { q1: null, q2: null, q3: null, q4: null };
 
   const steps = [...quiz.querySelectorAll("[data-step]")];
+  quiz.classList.add("is-auto-advance");
+  quiz.querySelectorAll("[data-next]").forEach(button => { button.hidden = true; });
 
   const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
 
@@ -75,7 +77,7 @@
   }
 
   function goNext() {
-    clearTimeout(answerScrollTimer);
+    clearTimeout(autoAdvanceTimer);
     const stepEl = steps[step];
     if (!stepEl || !selectedCard(stepEl)) {
       alert("選択してください");
@@ -90,7 +92,7 @@
   }
 
   function goPrev() {
-    clearTimeout(answerScrollTimer);
+    clearTimeout(autoAdvanceTimer);
     if (step > 0) {
       step -= 1;
       showStep(step);
@@ -131,19 +133,12 @@
       const key = stepEl.getAttribute("data-answer-key");
       answers[key] = card.getAttribute("data-value");
       updateCouponProgress();
-      // Allow the answer feedback to expand before measuring the button.
-      clearTimeout(answerScrollTimer);
-      answerScrollTimer = setTimeout(() => {
-        const button = stepEl.querySelector("[data-next]");
-        const viewport = window.visualViewport;
-        const visibleHeight = viewport ? viewport.height : window.innerHeight;
-        const visibleTop = viewport ? viewport.offsetTop : 0;
-        const targetBottom = visibleTop + visibleHeight * 0.82;
-        const distance = button.getBoundingClientRect().bottom - targetBottom;
-        if (distance > 0) {
-          window.scrollTo({ top: window.scrollY + distance, behavior: motion });
-        }
-      }, motion === "auto" ? 0 : 350);
+      // Briefly show the selected outline, then reuse the existing navigation
+      // event so question unlocking, focus and accessible progress stay in sync.
+      clearTimeout(autoAdvanceTimer);
+      autoAdvanceTimer = setTimeout(() => {
+        if (selectedCard(stepEl) === card) stepEl.querySelector("[data-next]").click();
+      }, 300);
     }
   });
 
@@ -152,12 +147,12 @@
     const card = e.target.closest(".card");
     if (card && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault();
-      card.click();
+      if (!e.repeat) card.click();
     }
   });
 
   function finishQuiz() {
-    clearTimeout(answerScrollTimer);
+    clearTimeout(autoAdvanceTimer);
     content.classList.add('is-visible');
     document.body.classList.add('ito-survey-complete');
     const button=steps[steps.length-1].querySelector('[data-next]');

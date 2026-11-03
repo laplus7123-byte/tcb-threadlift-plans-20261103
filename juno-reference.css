@@ -393,3 +393,8 @@ body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-prev:focus-visible {
     animation: none !important;
   }
 }
+
+/* Selecting an answer advances the survey; keep only the Back controls. */
+body.ito-minimal-update #diagnosis.quiz.is-auto-advance [data-next] {
+  display: none !important;
+}
