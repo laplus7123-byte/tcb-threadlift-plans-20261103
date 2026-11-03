@@ -7,7 +7,7 @@
   const autoButton = document.querySelector('[data-case-auto]');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let animationFrame = 0;
-  let manual = true;
+  let manual = false;
   let activePointer = null;
   let dragOffset = 0;
   let split = 50;
@@ -17,7 +17,7 @@
     if (hint) {
       hint.textContent = manual || reducedMotion.matches
         ? '中央の↕を上下に動かして比較'
-        : 'スクロール、またはつまみを上下に動かして比較';
+        : '下へスクロールするとアフターが広がります';
     }
   }
 
