@@ -186,19 +186,6 @@ body.ito-minimal-update .art-plan2 .is-scroll-ready .case-reveal__divider {
   user-select: none;
   -webkit-user-select: none;
 }
-body.ito-minimal-update .art-plan2 .case-reveal.is-scroll-ready::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: var(--case-split);
-  left: 0;
-  right: 0;
-  height: 2px;
-  transform: translateY(-50%);
-  background: #fff;
-  box-shadow: 0 0 0 1px #3cb3d488;
-  pointer-events: none;
-}
 body.ito-minimal-update .art-plan2 .case-reveal__divider span {
   display: grid;
   place-items: center;
@@ -212,10 +199,10 @@ body.ito-minimal-update .art-plan2 .case-reveal__divider span {
   font-size: 20px;
   line-height: 1;
 }
-body.ito-minimal-update .art-plan2 .case-reveal.is-at-end::after {
-  visibility: hidden;
+body.ito-minimal-update .art-plan2 .case-reveal__divider:focus {
+  outline: none;
 }
-body.ito-minimal-update .art-plan2 .case-reveal__divider:focus-visible {
+body.ito-minimal-update .art-plan2 .case-reveal__divider:focus-visible span {
   outline: 2px solid #137fac;
   outline-offset: 1px;
 }

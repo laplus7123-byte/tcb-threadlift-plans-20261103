@@ -16,7 +16,7 @@
     if (autoButton) autoButton.hidden = !manual || reducedMotion.matches;
     if (hint) {
       hint.textContent = manual || reducedMotion.matches
-        ? '中央の↕や境界線を上下に動かして比較'
+        ? '中央の↕を上下に動かして比較'
         : 'スクロール、またはつまみを上下に動かして比較';
     }
   }
