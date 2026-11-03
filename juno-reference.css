@@ -1,0 +1,395 @@
+/* Shared survey treatment inspired by the reference's clear illustrated cards.
+   Loaded last. The original survey controller still owns answers/navigation. */
+body.ito-minimal-update #diagnosis.quiz.juno-reference {
+  --juno-blue: #258bc8;
+  --juno-border: #62b5df;
+  --juno-ink: #202a31;
+  --juno-paper: #eaf9ff;
+  padding: 28px 12px 30px !important;
+  background: var(--juno-paper) !important;
+  color: var(--juno-ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  container-type: inline-size;
+}
+
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress {
+  position: relative;
+  inset: auto;
+  margin: 0 0 28px !important;
+  padding: 0 2px 20px !important;
+  border: 0;
+  border-bottom: 1px solid #b9deed;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__top {
+  gap: 6px;
+  color: #385968;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__top > span:first-child {
+  color: #385968;
+  font-size: clamp(13px, 3.4cqw, 17px);
+  font-weight: 600;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__top [data-step-label] {
+  color: #1674ac;
+  font-size: clamp(17px, 4.5cqw, 23px);
+  font-weight: 800;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__track {
+  width: min(100%, 370px);
+  height: 7px;
+  margin: 13px auto !important;
+  border-radius: 7px;
+  background: #cce8f4;
+  overflow: hidden;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__track > span {
+  background: linear-gradient(90deg, #65c9ed, #2997d4);
+  border-radius: 7px;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__track::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 24.5%, var(--juno-paper) 24.5%, var(--juno-paper) 25.5%, transparent 25.5%, transparent 49.5%, var(--juno-paper) 49.5%, var(--juno-paper) 50.5%, transparent 50.5%, transparent 74.5%, var(--juno-paper) 74.5%, var(--juno-paper) 75.5%, transparent 75.5%);
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: min(100%, 370px);
+  margin: 0 auto;
+  gap: 8px;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__numbers span {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #acd4e6;
+  border-radius: 50%;
+  background: #f8fdff;
+  color: #537580;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: none;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__numbers span.is-on,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__numbers span[data-answer-state="complete"] {
+  color: #fff;
+  border-color: #2c96cb;
+  background: #2c96cb;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__numbers span[aria-current="step"] {
+  border-color: #2288c0;
+  box-shadow: 0 0 0 3px var(--juno-paper), 0 0 0 4px #7fc4e6;
+}
+
+/* All four questions remain visible; only reached questions can be answered. */
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step.is-revealed {
+  display: grid !important;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 9px;
+  margin: 0 !important;
+  padding: 0 0 29px !important;
+  border: 0;
+  animation: none !important;
+  transition: filter .35s ease, opacity .35s ease;
+  scroll-margin-top: 90px;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step + .quiz-step,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step.is-revealed ~ .quiz-step.is-revealed {
+  margin-top: 0 !important;
+  padding-top: 26px !important;
+  border-top: 1px solid #c8e4ef;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step:last-child {
+  padding-bottom: 0 !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step:not(.is-revealed),
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step.is-juno-locked {
+  filter: grayscale(1);
+  opacity: .55;
+  pointer-events: none;
+  user-select: none;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-question-number {
+  grid-column: 1;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  width: 48px;
+  min-height: 36px;
+  margin: 0 !important;
+  padding: 7px 3px !important;
+  border: 0;
+  border-radius: 7px;
+  background: #2c96cb;
+  color: #fff;
+  font: 800 20px/1.1 "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  letter-spacing: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .survey-q-letter {
+  font-size: 13px;
+  font-style: normal;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz__q {
+  grid-column: 2;
+  align-self: center;
+  margin: 0 0 3px !important;
+  color: #18272f;
+  font-family: inherit;
+  font-size: clamp(20px, 4.9cqw, 28px) !important;
+  font-weight: 800;
+  line-height: 1.5 !important;
+  text-align: left;
+  letter-spacing: 0;
+  text-wrap: pretty;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz__hint {
+  grid-column: 1 / -1;
+  margin: 11px 0 15px !important;
+  color: #4d6a79;
+  font-size: clamp(13px, 3.3cqw, 16px);
+  font-weight: 500;
+  line-height: 1.65;
+  text-align: left;
+  letter-spacing: 0;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .cards {
+  grid-column: 1 / -1;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 7px !important;
+  align-items: stretch;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card {
+  border: 1.5px solid var(--juno-border) !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  box-shadow: 0 3px 6px #397b9821 !important;
+  font-family: inherit;
+  perspective: none !important;
+  transform: none !important;
+  transform-style: flat !important;
+  opacity: 1 !important;
+  filter: none !important;
+  transition: border-color .16s ease, box-shadow .16s ease;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__inner,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__face {
+  border-radius: 8px !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__inner,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active .card__inner {
+  display: block !important;
+  transform: none !important;
+  transform-style: flat !important;
+  perspective: none !important;
+  transition: none !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__front,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active .card__front {
+  background: #fff !important;
+  transform: none !important;
+  transform-style: flat !important;
+  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__front::after,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active .card__front::after {
+  content: none !important;
+  display: none !important;
+}
+/* The readable label precedes the illustration, like the reference cards. */
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__label,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card:last-child .card__label,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active .card__label {
+  order: -1 !important;
+  flex: 0 0 auto;
+  align-self: stretch;
+  min-height: 68px !important;
+  padding: 10px 3px !important;
+  border: 0 !important;
+  background: #197ab1 !important;
+  color: #fff !important;
+  font-size: clamp(14px, 4.4cqw, 20px) !important;
+  font-weight: 800;
+  line-height: 1.4 !important;
+  text-shadow: none;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .survey-art {
+  order: 0;
+  background: #fff;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active {
+  position: relative;
+  border-color: #2388b8 !important;
+  box-shadow: 0 3px 8px #287da326 !important;
+}
+/* Pulse only the outline; keep the illustration, words and check still. */
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  inset: -2px;
+  border: 2px solid #32b3df;
+  border-radius: 11px;
+  box-shadow: 0 0 0 1px #32b3df30, 0 0 8px #32b3df55;
+  opacity: 1;
+  pointer-events: none;
+  animation: survey-selected-outline 1.8s ease-in-out infinite;
+}
+@keyframes survey-selected-outline {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .08; }
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active .survey-art::after {
+  content: "✓";
+  position: absolute;
+  z-index: 2;
+  right: 6px;
+  bottom: 6px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #2388b8;
+  color: #fff;
+  box-shadow: 0 1px 4px #225f7e2b;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card__back,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active .card__back {
+  display: none !important;
+  transform: none !important;
+  transform-style: flat !important;
+  transition: none !important;
+}
+/* Choices use two explicit lines so Japanese words never break mid-phrase. */
+body.ito-minimal-update #diagnosis.quiz.juno-reference .survey-label-two-line,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .survey-label-two-line > span {
+  display: block;
+  white-space: nowrap;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .survey-selection-feedback {
+  display: none !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-next,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-prev {
+  grid-column: 1 / -1;
+  font-family: inherit;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-next {
+  min-height: 54px !important;
+  margin: 20px 0 0 !important;
+  padding: 12px 18px !important;
+  border: 1px solid #258fc5 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(180deg, #6ac8ee, #2999d2) !important;
+  color: #fff !important;
+  box-shadow: inset 0 1px 0 #ffffff80, 0 2px 0 #1980b0 !important;
+  font-size: 18px !important;
+  font-weight: 800;
+  line-height: 1.5 !important;
+  text-shadow: none;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-next:disabled {
+  border-color: #c2dce7 !important;
+  background: #e0edf3 !important;
+  color: #738e9b !important;
+  box-shadow: none !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-prev {
+  min-height: 44px;
+  margin: 7px auto 0 !important;
+  color: #4f7587 !important;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step:not(.is-revealed) .btn-next,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step:not(.is-revealed) .btn-prev {
+  display: none !important;
+}
+body.ito-minimal-update #diagnosis.quiz.juno-reference .card:focus-visible,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-next:focus-visible,
+body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-prev:focus-visible {
+  outline: 3px solid #176e9e;
+  outline-offset: 4px;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card:not(.is-active):hover {
+    border-color: #278bc0 !important;
+    box-shadow: 0 3px 9px #397b9838 !important;
+  }
+}
+
+@media (max-width: 359px) {
+  body.ito-minimal-update #diagnosis.quiz.juno-reference {
+    padding-inline: 8px !important;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .cards {
+    gap: 5px !important;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step {
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: 7px;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-question-number {
+    width: 44px;
+    font-size: 18px;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz__q {
+    font-size: 20px !important;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card__back {
+    padding-inline: 5px !important;
+  }
+}
+@media (min-width: 520px) {
+  body.ito-minimal-update #diagnosis.quiz.juno-reference {
+    padding: 34px 24px 38px !important;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .cards {
+    gap: 10px !important;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card__label,
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card:last-child .card__label {
+    min-height: 76px !important;
+    padding-inline: 3px !important;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card__back {
+    padding: 20px 12px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card.is-active::after {
+    animation: none;
+    opacity: 1;
+  }
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .quiz-step,
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card,
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .card__inner,
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .btn-next,
+  body.ito-minimal-update #diagnosis.quiz.juno-reference .tcb-progress__track > span {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,17 @@
+.tcb-template .card__back .ito-note-outside{grid-column:1 / -1;grid-row:2;display:block;justify-self:end;margin:0;font-size:11px;line-height:1.6;font-weight:400;color:#63515b;text-align:right}
+
+/* Preserve the original photograph; show only the edited tax-label area. */
+.ito-body-fv-crop{position:relative}
+.ito-body-fv-crop>img.ito-tax-removal-patch{position:absolute;top:0;left:0;width:100%;height:auto;aspect-ratio:750/1030;clip-path:inset(55.1% 6.7% 41.5% 83%);pointer-events:none}
+
+.tcb-template .page-footer .ito-footer-company-link{display:block;width:fit-content;margin:16px auto 0;padding:8px 12px;color:#51464d;font-size:13px;line-height:1.6;text-align:center;text-decoration:underline;text-underline-offset:3px}
+.ito-footer-company-link:focus-visible{outline:2px solid #ad467a;outline-offset:3px}
+
+/* Stack the operator link below the logo. Retain existing footer visibility rules. */
+.tcb-template .page-footer{flex-direction:column;align-items:center}
+.tcb-template .page-footer .ito-footer-company-link{margin:8px auto 0}
+
+/* End the displayed artwork before the obsolete embedded coupon footnote. */
+.tcb-template .ito-body-fv{container-type:inline-size}
+.tcb-template .ito-body-fv .ito-body-fv-crop{aspect-ratio:750/708}
+.tcb-template .ito-body-fv .ito-fv-inline-conditions{margin:0;padding:5px 1%;background:#fff;color:#63515b;font-size:1.45cqw;font-weight:400;line-height:1.8;letter-spacing:0;white-space:nowrap;text-align:center}

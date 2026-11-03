@@ -1,0 +1,29 @@
+.tcb-template .body-redesign .section.tcb-image-section{position:relative;padding:0;background:white;border:0}
+.tcb-section-art{display:block;width:100%;height:auto;margin:0}
+.tcb-art-copy{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.tcb-image-offer-link{display:block;text-decoration:none;line-height:0}
+.tcb-image-offer-link:focus-visible{outline:3px solid #b13f6a;outline-offset:-4px}
+.tcb-template .body-redesign .tcb-final-image{padding:0 0 24px}
+.tcb-final-image>p{margin-inline:24px!important}
+
+/* Space between full-art sections as well as inside the new images. */
+.tcb-template .body-redesign .section.tcb-image-section{padding-block:18px}
+.tcb-template .body-redesign .section.tcb-image-section:first-child{padding-top:0}
+.tcb-template .body-redesign .tcb-final-image{padding-top:28px;background:#fff!important}
+
+.tcb-result-scroll{display:flex;justify-content:center;padding:4px 0 28px;background:#fff;color:#bc3b69}
+.tcb-result-scroll svg{width:64px;height:72px;fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;animation:tcb-scroll-arrow 1.8s ease-in-out infinite}
+@keyframes tcb-scroll-arrow{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
+@media(prefers-reduced-motion:reduce){.tcb-result-scroll svg{animation:none}}
+
+.tcb-template .cases{scrollbar-width:none;padding-bottom:0}
+.tcb-template .cases::-webkit-scrollbar{display:none}
+.tcb-case-nav{display:flex;justify-content:center;align-items:center;gap:0;margin-top:18px}
+.tcb-case-nav button{appearance:none;border:0;background:none;padding:10px 18px;color:#aaa0a4;font-size:15px;line-height:1.4;cursor:pointer;font-weight:400}
+.tcb-case-nav button+button{border-left:1px solid #e5dce0}
+.tcb-case-nav button.is-current{color:#87304e;font-weight:700}
+.tcb-case-nav button:focus-visible{outline:2px solid #bc3b69;outline-offset:2px;border-radius:4px}
+
+.tcb-template .cases .case{flex-basis:86%;scroll-snap-align:center}
+
+.tcb-copy-keep{white-space:nowrap}

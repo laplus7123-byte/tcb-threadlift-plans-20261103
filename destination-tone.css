@@ -1,0 +1,123 @@
+/* Match the existing post-survey LP: bright pink, white and hand-drawn mint CTA.
+   Color and typography only. Survey layout, sizes and behavior stay unchanged. */
+body.ito-minimal-update .art-fv{
+ --destination-pink:#ef63a6;
+ --destination-ink:#353236;
+ background:#fff7fb;
+ color:var(--destination-ink)
+}
+body.ito-minimal-update .art-fv .art-fv-brand{background:#fff}
+body.ito-minimal-update .art-fv .art-fv-brand span,
+body.ito-minimal-update .art-fv .art-fv-condition,
+body.ito-minimal-update .art-fv .art-image-note,
+body.ito-minimal-update .art-fv .art-scratch-status{color:#61575d}
+body.ito-minimal-update .art-fv .art-fv-cta{
+ background:linear-gradient(145deg,#d4f7e7,#b8eed5 72%,#c8f3df);
+ border-color:#46534d;
+ border-radius:25px 29px 24px 28px;
+ box-shadow:inset 0 1px 0 #fff,0 3px 0 #d9dfdb;
+ color:#303b35
+}
+body.ito-minimal-update .art-fv .art-fv-cta small,
+body.ito-minimal-update .art-fv .art-fv-cta strong,
+body.ito-minimal-update .art-fv .art-fv-cta>span{
+ color:#303b35;
+ text-shadow:none;
+ font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif
+}
+body.ito-minimal-update .art-fv .art-fv-cta:hover{background:linear-gradient(145deg,#dffbee,#c4f3df)}
+body.ito-minimal-update .art-fv .art-fv-notes{
+ background:#fff;
+ border-color:#f0d4e1;
+ color:#60565c
+}
+body.ito-minimal-update .art-fv .art-fv-notes summary{color:#60565c}
+body.ito-minimal-update .art-fv .art-fv-notes summary:after{color:#d93b87}
+body.ito-minimal-update .art-fv .art-fv-notes a{color:#b32668}
+body.ito-minimal-update .art-fv .art-official-case{
+ background:linear-gradient(#fff,#fff8fc);
+ border-color:#f5dce8
+}
+body.ito-minimal-update .art-fv .art-case-eyebrow{
+ color:#b64d7f;
+ font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif
+}
+body.ito-minimal-update .art-fv .art-official-case h2{
+ color:#343136;
+ font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif
+}
+body.ito-minimal-update .art-fv .art-official-case figcaption{color:#514a50}
+body.ito-minimal-update .art-fv .art-scratch-reveal{
+ background:#fff;
+ border-color:#ef63a6;
+ color:#8e315b
+}
+body.ito-minimal-update .art-fv button:focus-visible,
+body.ito-minimal-update .art-fv a:focus-visible,
+body.ito-minimal-update .art-fv summary:focus-visible{outline-color:#3a6353}
+
+body.tcb-template.ito-dewy.ito-minimal-update .quiz{
+ --survey-rose:#ef63a6;
+ --survey-ink:#353236;
+ background:#fff9fc!important;
+ color:var(--survey-ink)
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress{
+ background:#fff;
+ border-color:#f2d6e3
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress__top{color:#60565c}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress__top [data-step-label]{color:#b52d6b}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress__track{background:#f9e6ef}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress__track>span{background:#ef63a6}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress__numbers span{background:#fae7f0;color:#685961}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-progress__numbers span.is-on{background:#ef63a6;color:#36232c}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .tcb-question-number{background:#ef63a6;color:#36232c}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .quiz__q{color:#353236}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .quiz__hint{color:#6a5e65}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card{
+ border-color:#f0bad3!important;
+ background:#fff!important;
+ box-shadow:0 3px 0 #f7e1eb!important
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card__front{background:#fff!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card__front:after{border-color:#dfa7c1!important;background:#fff!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card__label{
+ border-color:#f5dce7!important;
+ background:#fff1f7!important;
+ color:#3e353b!important
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card:last-child .card__label{border-left-color:#f5dce7!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card.is-active{
+ border-color:#ef63a6!important;
+ box-shadow:0 0 0 2px #ef63a6!important
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card.is-active .card__label{background:#ffd7e9!important;color:#3d2833!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card.is-active .card__front:after{
+ background:#ef63a6!important;
+ border-color:#ef63a6!important;
+ color:#36232c!important
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .card:focus-visible{outline-color:#9c2f64}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .survey-comment{
+ background:#fff;
+ border-color:#f0c9dc;
+ border-left-color:#ef63a6;
+ color:#484047
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .survey-comment .card__eyebrow{color:#b43872}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .survey-comment .card__feedback{color:#484047}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .survey-comment .ito-note-outside{color:#6d6068}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .btn-next{
+ background:linear-gradient(135deg,#ffafd0,#ef63a6)!important;
+ color:#3d2632!important;
+ border-color:#e66ba5!important;
+ box-shadow:0 3px 0 #f0bdd4!important
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .btn-next:disabled{
+ background:#f2e7ed!important;
+ border-color:#e7dbe2!important;
+ color:#8b7c85!important;
+ box-shadow:none!important
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz .btn-prev{color:#a63a6b!important}

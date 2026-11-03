@@ -1,0 +1,18 @@
+/* Expandable fees for treatments shown in case photographs. */
+.tcb-template .ito-case-prices{margin:12px 14px 18px;border:1px solid #e8c9d5;border-radius:10px;background:#fff;color:#51464d;text-align:left;font-size:10px;line-height:1.8;overflow:hidden}
+.tcb-template .ito-case-prices>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;cursor:pointer;list-style:none;background:#fff7fa;color:#9b4668;font-size:11px;font-weight:600;letter-spacing:0}
+.ito-case-prices>summary::-webkit-details-marker{display:none}
+.ito-case-prices>summary small{display:block;margin-top:4px;font-size:9px;line-height:1.6;font-weight:400;color:#63515b}
+.ito-case-prices__toggle{position:relative;flex:0 0 16px;width:16px;height:16px}
+.ito-case-prices__toggle:before{content:"";position:absolute;left:3px;top:2px;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
+.ito-case-prices[open] .ito-case-prices__toggle:before{top:6px;transform:rotate(225deg)}
+.ito-case-prices>summary:focus-visible{outline:2px solid #ad467a;outline-offset:-3px}
+.ito-case-prices__content{padding:0 14px 16px}
+.tcb-template .ito-case-prices .ito-case-prices__intro{margin:12px 0;font-size:10px;line-height:1.8}
+.tcb-template .ito-case-prices section{margin:16px 0 0;padding:0;border:0;background:none}
+.tcb-template .ito-case-prices h3{margin:0 0 8px;padding:0 0 6px;border-bottom:1px solid #efdde5;font-size:11px;line-height:1.7;color:#9b4668;letter-spacing:0;text-align:left}
+.tcb-template .ito-case-prices h4{margin:10px 0 4px;font-size:10px;line-height:1.6;color:#51464d}
+.ito-case-prices dl{margin:0}
+.ito-case-prices dl>div{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0 8px;padding:3px 0}
+.ito-case-prices dt,.ito-case-prices dd{margin:0;font-size:10px;line-height:1.8}
+.ito-case-prices dd{margin-left:auto;white-space:nowrap;font-variant-numeric:tabular-nums}

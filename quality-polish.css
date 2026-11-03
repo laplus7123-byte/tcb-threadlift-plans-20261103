@@ -1,0 +1,51 @@
+/* Shared finishing touches; keep the approved artwork and original LP body. */
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .quiz__q{text-align:center;text-wrap:initial}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .quiz__hint{text-align:center}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-question-number{display:table;margin:0 auto 13px}
+.survey-question-line{display:block}
+.survey-label-compact{display:none}
+.art-fv.art-plan5 .art-scratch{height:24.5%}
+.art-fv.art-plan5 .art-image-note{top:50%;right:4%}
+@media(max-width:359px){
+ .survey-label-regular{display:none}
+ .survey-label-compact{display:block;white-space:nowrap}
+}
+body.ito-minimal-update .art-fv .art-fv-brand{padding:18px 5%;gap:16px}
+body.ito-minimal-update .art-fv .art-fv-condition{margin:11px 5% 0;line-height:1.7}
+body.ito-minimal-update .art-fv .art-fv-cta{
+ margin:24px 5% 16px;padding:17px 40px 17px 18px;min-height:86px;
+ background:linear-gradient(140deg,#d9f8e9,#bfead6);border:1px solid #719b85;
+ border-radius:999px;box-shadow:0 4px 0 #e2eae6;gap:4px;
+ transition:background .2s,transform .2s;
+}
+body.ito-minimal-update .art-fv .art-fv-cta small{font-size:clamp(12px,3.3cqw,17px);color:#436553}
+body.ito-minimal-update .art-fv .art-fv-cta strong{font-size:clamp(20px,5.3cqw,30px);line-height:1.45;letter-spacing:.02em;color:#294b39}
+body.ito-minimal-update .art-fv .art-fv-cta>span{right:17px;top:50%;transform:translateY(-50%);font-size:29px;color:#426a53}
+body.ito-minimal-update .art-fv .art-fv-notes{margin:14px 5%;border-radius:12px;font-size:14px}
+body.ito-minimal-update .art-fv .art-fv-notes summary{padding:13px 14px;gap:12px;font-size:clamp(13px,3.3cqw,15px);min-height:48px}
+body.ito-minimal-update .art-fv .art-fv-notes>div{padding:2px 16px 16px;line-height:1.9}
+body.ito-minimal-update .art-fv .art-official-case{padding:30px 5% 24px;margin-top:26px;background:#fff;border-color:#f2dbe5}
+body.ito-minimal-update .art-fv .art-case-eyebrow{font-size:13px;font-weight:600;letter-spacing:.06em;color:#b64d7f}
+body.ito-minimal-update .art-fv .art-official-case h2{font-size:clamp(21px,5.2cqw,29px);line-height:1.5;margin:7px 0 20px;letter-spacing:.03em}
+body.ito-minimal-update .art-fv .art-official-case figure{border:1px solid #efdee6;border-radius:12px;overflow:hidden;padding:8px}
+body.ito-minimal-update .art-fv .art-official-case figcaption{padding:12px 7px 4px;font-size:14px}
+body.ito-minimal-update .art-fv .art-official-case .art-fv-notes{margin:12px 0}
+.art-fv .art-survey-link{display:flex;align-items:center;justify-content:center;gap:16px;min-height:48px;padding:10px;margin:14px 0 0;color:#95355f;font-size:16px;font-weight:700;text-decoration:underline;text-underline-offset:5px}
+.art-fv .art-survey-link span{font-size:20px;text-decoration:none}
+body.ito-minimal-update:not(.ito-survey-complete) .page-wrap>.ito-update-notes{display:none}
+body.ito-minimal-update .sticky-cta[hidden]{display:none!important}
+body.ito-minimal-update .page-footer .tcb-footer-brand{display:block;width:76%;max-width:260px;height:auto;margin:24px auto 18px;overflow:visible}
+body.ito-minimal-update .page-footer .page-footer__logo{position:static;display:block;width:100%;max-width:100%;height:auto;margin:0;transform:none;object-fit:contain}
+body.ito-minimal-update .ito-official-flow .flow__slider_frame p{font-size:clamp(15px,3.46cqw,22px);line-height:1.9;letter-spacing:.015em}
+body.ito-minimal-update .ito-official-flow .flow__slider_frame h3{font-size:clamp(18px,4.8cqw,30px);line-height:1.6}
+body.ito-minimal-update .ito-official-flow .flow__slider_img{margin-bottom:24px}
+body.ito-minimal-update .ito-official-flow .ito-flow-dots button{min-height:44px}
+body.ito-minimal-update .ito-final-reservation{container-type:inline-size;padding:36px 4% 28px;background:linear-gradient(160deg,#fff9fc,#fff0f6);text-align:center;border-top:1px solid #f3dfe8}
+.ito-final-reservation .ito-final-eyebrow{color:#a54370;font-size:clamp(14px,3.4cqw,18px);font-weight:600;margin:0 0 12px}
+body.ito-minimal-update .ito-final-reservation h2{font-size:clamp(21px,4.8cqw,29px);line-height:1.65;color:#3c3439;background:none;border:0;padding:0;margin:0 0 20px;letter-spacing:.02em}
+body.ito-minimal-update .ito-final-reservation .ito-coupon-image-cta{display:block;width:100%;margin:0 auto 16px;padding:0}
+.ito-final-reservation .ito-final-note{font-size:14px;line-height:1.8;color:#6c5c65;max-width:30em;margin:16px auto;text-wrap:balance}
+body.ito-minimal-update .ito-final-reservation .ito-update-notes{margin:14px 0 0;text-align:left}
+body.ito-minimal-update a:focus-visible,body.ito-minimal-update summary:focus-visible{outline:3px solid #966080;outline-offset:4px}
+@media(hover:hover){body.ito-minimal-update .art-fv .art-fv-cta:hover{background:#d6f5e5;transform:translateY(-1px)}}
+@media(prefers-reduced-motion:reduce){body.ito-minimal-update .art-fv .art-fv-cta{transition:none}}

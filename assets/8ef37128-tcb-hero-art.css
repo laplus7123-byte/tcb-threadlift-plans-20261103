@@ -1,0 +1,7 @@
+/* Finished image typography with the supplied live footage above it. */
+.tcb-designed-visual{position:relative;isolation:isolate;background:#fff}
+.tcb-designed-visual__art{display:block;width:100%;height:auto}
+.tcb-designed-visual__video{position:absolute;z-index:1;right:0;top:0;width:48%;height:68.4%;overflow:hidden;border-bottom-left-radius:32% 22%}
+.tcb-designed-visual__video video{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.tcb-designed-visual__video>span{position:absolute;right:8px;bottom:12px;color:#fff;background:#0005;padding:3px 6px;font-size:9px}
+.tcb-hero-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}

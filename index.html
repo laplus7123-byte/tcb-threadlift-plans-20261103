@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="TCB小顔リフトLPの案1と案2を比較できます。案2の症例は手動で上下に動かして比較できます。" name="description"/>
+<title>糸リフトLP｜案1・案2のプレビュー</title>
+<style>
+    :root{color-scheme:light;--ink:#382c33;--muted:#75616c;--pink:#1c86ae;--line:#d8eaf2;--paper:#fff;--wash:#effaff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wash);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}img{display:block;max-width:100%}.wrap{width:min(1440px,100%);margin-inline:auto;padding-inline:clamp(20px,4vw,64px)}
+    .topbar{border-bottom:1px solid var(--line);background:#fff}.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:82px}.brand{width:190px;height:auto}.review-label{font-size:12px;line-height:1.6;letter-spacing:.1em;color:var(--muted);text-align:right}.review-label span{display:block;color:var(--pink);font-weight:700;letter-spacing:.03em}
+    .intro{padding-block:56px 36px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}.eyebrow{margin:0 0 13px;color:var(--pink);font-size:12px;font-weight:700;letter-spacing:.2em}h1{font-size:clamp(29px,3.5vw,48px);line-height:1.35;letter-spacing:.015em;margin:0 0 17px}h1 span{color:var(--pink)}.lead{max-width:650px;margin:0;color:var(--muted);font-size:15px;line-height:1.9}.plan-count{flex:0 0 auto;display:flex;align-items:center;gap:14px;border-left:1px solid #e3c6d3;padding-left:24px;color:var(--pink)}.plan-count strong{font-size:56px;line-height:1;font-weight:600;letter-spacing:-.06em}.plan-count span{font-size:12px;line-height:1.8;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding-bottom:40px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 5px 18px #7b365508;transition:box-shadow .2s,transform .2s}.card:hover{box-shadow:0 12px 30px #7b365514;transform:translateY(-3px)}.card-top{padding:18px 20px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px}.plan-number{font-size:12px;letter-spacing:.16em;color:var(--pink);font-weight:800}.tag{font-size:11px;line-height:1.5;color:#87516a;background:#fff1f6;border:1px solid #f5dfe8;padding:4px 9px;border-radius:20px}.preview{display:block;position:relative;aspect-ratio:4/5;margin:0 12px;overflow:hidden;border:1px solid #f6e6ec;border-radius:11px;background:linear-gradient(155deg,#fff9fb,#fce9f1);text-decoration:none}.preview img{width:100%;height:100%;object-fit:contain}.preview::after{content:"";position:absolute;inset:0;border:1px solid #fff6;border-radius:inherit;pointer-events:none}.card-body{display:flex;flex-direction:column;flex:1;padding:22px 20px 20px}.card h2{font-size:clamp(19px,1.5vw,23px);line-height:1.45;letter-spacing:.01em;margin:0 0 12px}.description{margin:0 0 18px;color:var(--muted);font-size:14px;line-height:1.85;min-height:5.55em}.point{border-top:1px solid #f0e5ea;padding-top:14px;margin:0 0 22px;font-size:12px;line-height:1.75;color:#6f5362}.point b{display:block;color:var(--pink);font-size:10px;letter-spacing:.16em;margin-bottom:4px}.open{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:50px;margin-top:auto;padding:12px 16px;border:1px solid var(--pink);border-radius:10px;text-decoration:none;background:var(--pink);color:#fff;font-size:14px;font-weight:700;line-height:1.5;transition:background .2s}.open:hover{background:#972151}.open span{font-size:21px;font-weight:400;line-height:1}
+    .common{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 32px;margin-bottom:48px}.common-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}.common h2{font-size:20px;margin:0;line-height:1.5}.common-heading p{margin:0;color:var(--muted);font-size:12px}.common-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}.common-item{padding-left:15px;border-left:2px solid #edabc7}.common-item h3{margin:0 0 8px;font-size:14px;line-height:1.6}.common-item p{margin:0;color:var(--muted);font-size:13px;line-height:1.85}.foot{display:flex;justify-content:space-between;gap:15px;padding-bottom:28px;color:#876d79;font-size:11px;line-height:1.7}.foot p{margin:0}a:focus-visible{outline:3px solid #248d9a;outline-offset:4px}
+    @media(min-width:1181px){.description{min-height:7.4em}.point{min-height:6.2em}}
+    @media(max-width:1180px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.preview{aspect-ratio:4/5}.card h2{font-size:24px}.description{min-height:3.7em}.point{min-height:4.5em}.card-body{padding:24px}.common-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 32px}.intro{padding-top:42px}}
+    @media(max-width:600px){.topbar .wrap{min-height:69px}.brand{width:155px}.review-label{font-size:10px}.intro{display:block;padding-block:34px 28px}.eyebrow{font-size:10px;margin-bottom:12px}h1{font-size:29px}.lead{font-size:14px}.plan-count{display:none}.grid{grid-template-columns:1fr;gap:24px;padding-bottom:30px}.card{border-radius:17px}.card-top{padding:17px 20px 14px}.preview{aspect-ratio:4/5}.card-body{padding:22px}.card h2{font-size:23px}.description{min-height:0;margin-bottom:16px}.point{min-height:0;margin-bottom:20px}.open{font-size:15px;min-height:53px}.common{padding:24px 20px;margin-bottom:28px}.common-heading{display:block;margin-bottom:24px}.common-heading p{margin-top:7px}.common-grid{grid-template-columns:1fr;gap:23px}.foot{display:block}.foot p+p{margin-top:5px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.open{transition:none}.card:hover{transform:none}}
+  
+@media(min-width:1181px){.grid{max-width:1000px;margin-inline:auto}.preview{aspect-ratio:4/5}.description,.point{min-height:0}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<div class="wrap">
+<img alt="TCB 東京中央美容外科" class="brand" height="47" src="assets/tcb-official-logo.webp" width="315"/>
+<div class="review-label">THREAD LIFT LP<span>デザイン比較プレビュー</span></div>
+</div>
+</header>
+<main class="wrap">
+<section aria-labelledby="page-title" class="intro">
+<div>
+<p class="eyebrow">TWO DESIGN DIRECTIONS</p>
+<h1 id="page-title">糸リフトLP、<span>2つの提案。</span></h1>
+<p class="lead">案1は価格訴求、案2はFV内の症例比較。各案のアンケートと回答後のLPまで確認できます。</p>
+</div>
+<div aria-hidden="true" class="plan-count"><strong>02</strong><span>DESIGNS　案1 / 案2</span></div>
+</section>
+<section aria-label="2案の比較" class="grid">
+<article class="card">
+<div class="card-top"><span class="plan-number">PLAN 01</span><span class="tag">価格から伝える</span></div>
+<a aria-label="案1 華やかな価格訴求のプレビューを開く" class="preview" href="plan1.html"><img alt="水色とピンクの光沢感に、モデル写真と大きな価格を組み合わせた案1" fetchpriority="high" height="1402" src="assets/art-fv-plan1-juno-v1.png" width="1122"/></a>
+<div class="card-body"><h2>華やかな価格訴求</h2><p class="description">印象的なモデル写真と大きな価格表示。小顔への期待感とクーポンの魅力を、ひと目で伝えます。</p><p class="point"><b>FIRST IMPRESSION</b>明るく華やか。価格のわかりやすさを重視。</p><a class="open" href="plan1.html">案1をプレビュー<span aria-hidden="true">→</span></a></div>
+</article>
+<article class="card">
+<div class="card-top"><span class="plan-number">PLAN 02</span><span class="tag">症例から伝える</span></div>
+<a aria-label="案2 公式症例で比較のプレビューを開く" class="preview" href="plan2.html"><img alt="FV内に手動の症例比較を組み込んだ案2" src="assets/preview-plan2.png"/></a>
+<div class="card-body"><h2>公式症例で比較</h2><p class="description">公式の症例写真をFVの中に配置。中央のつまみや境界線を上下に動かし、施術前と施術後を比較できます。</p><p class="point">手動比較が初期状態です。スクロール連動にも切り替えられます。</p><a class="open" href="plan2.html">案2をプレビュー<span aria-hidden="true">→</span></a></div>
+</article>
+
+
+</section>
+<section aria-labelledby="common-title" class="common">
+<div class="common-heading"><h2 id="common-title">2案共通のポイント</h2><p>各プレビューで、回答後のLPまで確認できます。</p></div>
+<div class="common-grid">
+<div class="common-item"><h3>3枚並びの、見やすい選択肢</h3><p>ポップで可愛い人物イラストと、読みやすい青い見出し帯。次の質問はグレーで表示します。</p></div>
+<div class="common-item"><h3>選んだカードは、ブルーの枠が点滅</h3><p>選んだイラストはそのままに、ブルーの枠がゆっくり点滅し、チェックで選択を表示。原因コメントは表示せず、選択肢は読みやすい2行に揃えました。</p></div>
+<div class="common-item"><h3>ロゴ・症例はTCB公式素材</h3><p>正規のロゴと症例写真を使用。施術情報や注釈も確認できる構成です。</p></div>
+<div class="common-item"><h3>回答後のLPへ、自然につなぐ</h3><p>FVから予約ボタンまで水色とピンクで統一。最初のポップアップはありません。</p></div>
+</div>
+</section>
+<footer class="foot"><p>糸リフトLP デザイン比較 ／ 案1・案2</p><p>2026.11.03 更新</p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Restore the source LP's white/rose editorial language around the retained art. */
+body.ito-minimal-update .art-fv{background:#fff;color:#30262c}
+body.ito-minimal-update .art-fv .art-fv-brand{padding:16px 5%}
+body.ito-minimal-update .art-fv .art-fv-brand img{width:66%;max-width:315px}
+body.ito-minimal-update .art-fv .art-fv-brand span{display:none}
+body.ito-minimal-update .art-fv .art-fv-condition{color:#7b6f75;margin:8px 5%;font-size:clamp(11px,2.8cqw,14px)}
+body.ito-minimal-update .art-fv .art-fv-cta{
+ display:block;margin:2px 3% 4px;padding:0;min-height:0;width:94%;
+ background:none;border:0;border-radius:0;box-shadow:none;line-height:0;
+}
+body.ito-minimal-update .art-fv .art-fv-cta:hover{background:none;transform:none}
+.art-fv-cta .art-start-image{display:block;width:100%;height:auto;margin:0}
+body.ito-minimal-update .art-fv .art-fv-notes{
+ margin:0 5%;background:#fff;border:0;border-top:1px solid #ebdce3;border-bottom:1px solid #ebdce3;border-radius:0;
+}
+body.ito-minimal-update .art-fv .art-fv-notes summary{padding:11px 3px;color:#77636d;font-size:13px;min-height:44px}
+body.ito-minimal-update .art-fv .art-fv-notes summary:after{font-size:18px;color:#c34f83}
+body.ito-minimal-update .art-fv .art-fv-notes>div{padding:8px 3px 18px}
+body.ito-minimal-update .art-fv .art-official-case{padding:30px 5% 10px;background:#fff;border-top:0;margin-top:8px}
+body.ito-minimal-update .art-fv .art-case-eyebrow{font-size:13px;color:#ba6a8a;font-weight:500;letter-spacing:.12em}
+body.ito-minimal-update .art-fv .art-official-case h2{
+ font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-weight:600;color:#342830;
+ font-size:clamp(23px,5.3cqw,31px);letter-spacing:.06em;margin:9px 0 23px;
+}
+body.ito-minimal-update .art-fv .art-official-case figure{border:0;border-radius:0;padding:0}
+body.ito-minimal-update .art-fv .art-official-case figcaption{padding:11px 1px;font-weight:500;color:#65575f}
+body.ito-minimal-update .art-fv .art-official-case .art-fv-notes{margin:0}
+.art-fv .art-survey-link{font-size:16px;color:#ad3b70;text-underline-offset:6px}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz]{
+ background:#fff!important;padding:25px 12px 32px!important;color:#342830;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress{
+ border:0;border-radius:0;background:#fff;box-shadow:none;margin:0 0 30px!important;padding:0 8px 18px!important;
+ border-bottom:1px solid #eadde4;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__top{gap:3px;color:#78616d;font-size:13px;line-height:1.6}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__top>span:first-child{font-size:12px;color:#8a7881;font-weight:400}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__top [data-step-label]{font-size:15px;font-weight:600;color:#b63f74}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__track{height:4px;margin:12px auto 0!important;background:#f5e6ed;border-radius:0;overflow:hidden;position:relative}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__track>span{background:linear-gradient(90deg,#eab2c9,#ce528a);border-radius:0}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__track:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 24.4%,#fff 24.4%,#fff 25.6%,transparent 25.6%,transparent 49.4%,#fff 49.4%,#fff 50.6%,transparent 50.6%,transparent 74.4%,#fff 74.4%,#fff 75.6%,transparent 75.6%)}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-progress__numbers{display:none}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .tcb-question-number{
+ display:flex;justify-content:center;align-items:baseline;gap:5px;width:fit-content;margin:0 auto 14px;
+ background:none;border:0;border-radius:0;box-shadow:none;color:#c95784;padding:0;
+ font:italic 43px/1 'Bodoni 72','Didot','Times New Roman',serif;letter-spacing:-.035em;text-shadow:none;
+}
+.survey-q-letter{font-size:.58em;letter-spacing:0}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .quiz__q{
+ font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(22px,4.7cqw,29px)!important;
+ line-height:1.65!important;letter-spacing:.025em;color:#33262e;font-weight:600;margin:0 0 12px!important;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .quiz__hint{font-size:13px;color:#87727c;line-height:1.65;margin-bottom:22px!important;letter-spacing:.015em}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .cards{gap:8px!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card{
+ border:1px solid #e4bdcf!important;border-radius:8px!important;box-shadow:0 2px 6px #9e6b8110!important;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card__inner,
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card__face{border-radius:7px!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card__label,
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card:last-child .card__label{
+ background:#fff!important;color:#3a3035!important;border-top:0!important;font-size:clamp(14px,3.8cqw,20px)!important;
+ min-height:75px!important;padding:10px 3px 8px!important;line-height:1.55!important;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card__front:after{
+ content:''!important;display:block!important;position:static!important;transform:none!important;flex:none;
+ width:17px!important;height:17px!important;border:1px solid #cd9bb2!important;background:#fff!important;
+ border-radius:50%!important;box-shadow:none!important;margin:0 auto 12px!important;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card.is-active{border-color:#ce528a!important;box-shadow:0 0 0 1px #ce528a!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card__back{background:linear-gradient(#fff9fb,#ffedf4)!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .card__back .card__eyebrow{color:#bd477e!important;border-bottom-color:#e6b4cb!important;font-weight:600!important}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .btn-next{
+ border:1px solid #c7608d!important;border-radius:999px!important;min-height:56px!important;
+ background:linear-gradient(180deg,#f3a4c7 0%,#e66da7 38%,#cf4483 100%)!important;
+ box-shadow:inset 0 1px 1px #fff9,0 3px 7px #a35a7920!important;color:#fff!important;
+ font-size:18px!important;font-weight:600;text-shadow:0 1px 1px #8b3c5d30;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .btn-next:disabled{
+ background:linear-gradient(#fffafc,#f6e5ec)!important;border-color:#ead3de!important;
+ color:#ad929f!important;box-shadow:inset 0 1px #fff!important;text-shadow:none;
+}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .btn-prev{font-size:14px!important;font-weight:400;color:#9b778a!important}
+body.ito-minimal-update .ito-final-reservation{background:#fff;border-top:1px solid #eed9e3}
+body.ito-minimal-update .ito-final-reservation h2{font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-weight:600;color:#362b31}
+@media(max-width:359px){
+ body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz]{padding-inline:7px!important}
+ body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .cards{gap:5px!important}
+ body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz] .quiz__q{font-size:21px!important;letter-spacing:0}
+}
+@media(min-width:520px){body.tcb-template.ito-dewy.ito-minimal-update .quiz[data-quiz]{padding-inline:24px!important}}

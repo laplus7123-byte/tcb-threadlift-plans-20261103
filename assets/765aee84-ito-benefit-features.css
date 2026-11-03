@@ -1,0 +1,26 @@
+/* Soft editorial cards inspired by the supplied reference. */
+.tcb-template.ito-dewy .body-redesign .section.ito-benefit-features{padding:40px 24px 48px;background:#fff0f6;color:#503441}
+.ito-benefit-features .ito-benefits-title{margin:0 0 32px;padding:0;text-align:center;font-family:'Yu Mincho','Hiragino Mincho ProN',serif;font-size:clamp(20px,4.7vw,29px);line-height:1.65;font-weight:600;color:#503441}
+.ito-benefits-title span{color:#dc568e}
+.ito-benefit-feature{position:relative;background:#fff;border-radius:64px 10px 40px 10px;box-shadow:0 6px 24px #ca638b1c;padding:18px 18px 20px}
+.ito-benefit-feature+.ito-benefit-feature{margin-top:36px}
+.ito-benefit-feature__heading{position:relative;padding:68px 0 20px;border:0;text-align:center}
+.ito-benefit-feature__heading::before{content:'';position:absolute;top:21px;left:0;right:78px;border-top:3px dotted #efa1bf}
+.ito-benefit-feature__number{position:absolute;right:0;top:-7px;background:none;border:0;box-shadow:none;color:#fff;line-height:1}
+.ito-benefit-feature__number span{display:none}
+.ito-benefit-feature__number b{font:italic 400 58px/1 Georgia,serif;-webkit-text-stroke:1px #d96394;color:#fff}
+.ito-benefit-feature__heading h3{margin:0;font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;font-size:clamp(16px,3.8vw,23px);font-weight:700;line-height:1.65;letter-spacing:.02em;color:#503441}
+.ito-benefit-feature__heading h3 strong{display:table;margin:8px auto 0;font-size:clamp(21px,5vw,31px);line-height:1.65;font-weight:800;color:#d94385;background:linear-gradient(transparent 66%,#ffe3ef 66%,#ffe3ef 92%,transparent 92%);border-radius:3px}
+.ito-benefit-feature__photo{position:relative;margin:8px -8px -8px;isolation:isolate}
+.ito-benefit-feature__photo>img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center;margin:0;border-radius:8px 8px 32px 8px}
+.ito-benefit-feature__bubble{position:absolute;top:12%;right:3%;box-sizing:border-box;width:34%;aspect-ratio:1;min-height:0;display:flex;align-items:center;justify-content:center;text-align:center;margin:0;padding:10px 5px;background:#fff0f7;border:3px solid #fff;border-radius:50%;box-shadow:0 3px 15px #ca638b22;color:#ce4480;font-size:clamp(12px,3vw,18px);font-weight:700;line-height:1.7}
+.ito-benefit-feature__photo figcaption{position:absolute;right:12px;bottom:5px;padding:2px 5px;background:#ffffffd9;color:#655d61;font-size:9px;line-height:1.5}
+@media(max-width:430px){.tcb-template.ito-dewy .body-redesign .section.ito-benefit-features{padding:32px 18px 36px}.ito-benefit-feature{padding:16px 14px 18px;border-top-left-radius:48px}.ito-benefit-feature__heading{padding-top:54px}.ito-benefit-feature__number b{font-size:48px}.ito-benefit-feature__heading::before{right:66px;top:17px}.ito-benefit-feature+.ito-benefit-feature{margin-top:28px}}
+
+/* Reveal once on entering view; keep content visible without JavaScript. */
+.ito-benefit-feature__bubble{outline:1px solid #f4bed4;outline-offset:3px;transform:rotate(4deg)}
+.ito-benefit-feature.is-feature-visible{animation:ito-feature-enter .65s cubic-bezier(.2,.8,.3,1) both}
+.ito-benefit-feature.is-feature-visible .ito-benefit-feature__bubble{animation:ito-feature-pop .8s .2s cubic-bezier(.22,.9,.3,1.2) both}
+@keyframes ito-feature-enter{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ito-feature-pop{0%{transform:scale(.65) rotate(-9deg);opacity:0}65%{transform:scale(1.08) rotate(7deg);opacity:1}100%{transform:scale(1) rotate(4deg);opacity:1}}
+@media(prefers-reduced-motion:reduce){.ito-benefit-feature.is-feature-visible,.ito-benefit-feature.is-feature-visible .ito-benefit-feature__bubble{animation:none}}

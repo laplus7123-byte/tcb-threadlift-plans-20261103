@@ -1,0 +1,22 @@
+/* Minimal edits: keep the original palette, card layout and imagery. */
+.ito-minimal-update .ito-original-fv{margin:0;padding:0;position:relative}
+.ito-minimal-update .ito-fv-survey-link{display:block;margin:0;padding:0}
+.ito-minimal-update .ito-original-fv img{display:block;width:100%;height:auto;margin:0;max-height:none;object-fit:contain}
+.ito-minimal-update .ito-fv-survey-link:focus-visible{outline:3px solid #b13f6a;outline-offset:-3px}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz__q{font-size:21px;line-height:1.65}
+body.tcb-template.ito-dewy.ito-minimal-update .quiz__hint{font-size:14px;line-height:1.7}
+body.tcb-template.ito-dewy.ito-minimal-update .card__front{grid-template-columns:86px minmax(0,1fr) 20px;gap:12px;min-height:112px;padding:12px}
+body.tcb-template.ito-dewy.ito-minimal-update .card__img{width:86px;height:86px}
+body.tcb-template.ito-dewy.ito-minimal-update .card__label{font-size:18px;line-height:1.6}
+body.tcb-template.ito-dewy.ito-minimal-update .card__back .card__feedback{font-size:17px;line-height:1.8}
+body.tcb-template.ito-dewy.ito-minimal-update .card__back .card__eyebrow{font-size:13px}
+body.tcb-template.ito-dewy.ito-minimal-update .btn-next,body.tcb-template.ito-dewy.ito-minimal-update .btn-prev{font-size:17px;min-height:48px}
+body.tcb-template.ito-dewy.ito-minimal-update .tcb-progress__top{font-size:12px;flex-wrap:wrap}
+body.tcb-template.ito-dewy.ito-minimal-update .tcb-question-number{font-size:14px}
+.ito-minimal-update .ito-update-notes{border:1px solid #ebdce1;border-radius:10px;margin:10px 4%;background:#fff;overflow:hidden;color:#63515b;text-align:left}
+.ito-minimal-update .ito-update-notes>summary{padding:12px 14px;font-size:14px;line-height:1.7;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff9fb}
+.ito-minimal-update .ito-update-notes>summary::-webkit-details-marker{display:none}
+.ito-minimal-update .ito-update-notes>summary::after{content:'＋';position:static;border:0;transform:none;width:auto;height:auto;color:#b13f6a;font-size:20px}
+.ito-minimal-update .ito-update-notes[open]>summary::after{content:'−'}
+.ito-minimal-update .ito-update-notes>p,.ito-minimal-update .ito-update-notes>div,.ito-minimal-update .ito-update-notes>section{font-size:14px!important;line-height:1.8!important;white-space:normal!important;text-align:left!important;margin:0!important;padding:12px 14px!important;color:#63515b!important}
+@media(max-width:359px){body.tcb-template.ito-dewy.ito-minimal-update .card__front{grid-template-columns:72px minmax(0,1fr) 18px;gap:9px;padding:10px}body.tcb-template.ito-dewy.ito-minimal-update .card__img{width:72px;height:72px}body.tcb-template.ito-dewy.ito-minimal-update .card__label{font-size:17px}body.tcb-template.ito-dewy.ito-minimal-update .quiz__q{font-size:20px}}

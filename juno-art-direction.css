@@ -1,0 +1,168 @@
+/* Shared art direction: luminous cyan, blush and fine glossy accents. */
+body.tcb-template.ito-dewy.ito-minimal-update{background:linear-gradient(110deg,#e3f6ff 0%,#f9faff 47%,#ffe9f4 100%)!important;color:#244853}
+body.ito-minimal-update .page-wrap{max-width:520px;margin-inline:auto;background:#fff;box-shadow:0 0 50px #547b9012}
+body.ito-minimal-update .ito-pr-label{margin:0;padding:4px 14px;background:#fff;font-size:10px;color:#728087}
+body.ito-minimal-update .art-fv{background:linear-gradient(110deg,#eefaff,#fff6fb);padding-bottom:14px}
+body.ito-minimal-update .art-fv .art-fv-brand{background:#fff;padding:13px 5%;border-bottom:1px solid #dfedf2}
+body.ito-minimal-update .art-fv .art-fv-brand img{width:61%;max-width:275px}
+body.ito-minimal-update .art-fv .art-fv-brand span{display:block;color:#6b7e87;font-size:clamp(10px,2.4cqw,12px);letter-spacing:.03em}
+body.ito-minimal-update .art-fv .art-fv-condition{margin:10px 4% 4px;color:#5e707c;font-size:clamp(11px,2.7cqw,14px)}
+body.ito-minimal-update .art-fv .art-image-note{color:#4e6672;font-size:clamp(10px,2.5cqw,13px);text-shadow:0 1px 3px #fff}
+body.ito-minimal-update .art-fv.art-plan5 .art-image-note{top:35%}
+body.ito-minimal-update .art-fv .art-fv-cta{display:block;width:96%;margin:10px auto 14px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;min-height:0;line-height:0;isolation:isolate}
+body.ito-minimal-update .art-fv .art-fv-cta:hover{background:none;transform:none}
+body.ito-minimal-update .art-fv .art-start-image{width:100%;height:auto;display:block}
+body.ito-minimal-update .art-fv .art-fv-notes{margin:0 4%;border:1px solid #cce6ee;border-radius:8px;background:#ffffffbd;color:#596c78}
+body.ito-minimal-update .art-fv .art-fv-notes summary{font-size:13px;color:#426b7f;padding:10px 12px;min-height:44px}
+body.ito-minimal-update .art-fv .art-fv-notes summary:after{color:#399fc7}
+body.ito-minimal-update .art-fv .art-fv-notes>div{padding:6px 13px 16px;line-height:1.9}
+body.ito-minimal-update .art-fv .art-official-case{background:#fff;padding:28px 5% 18px;margin-top:20px;border-top:1px solid #d4eaf2}
+body.ito-minimal-update .art-fv .art-official-case h2{color:#1b627f;font-size:clamp(24px,5.5cqw,30px);line-height:1.55;margin:9px 0 20px}
+body.ito-minimal-update .art-fv .art-case-eyebrow{color:#d74b96;font-size:12px;letter-spacing:.12em}
+body.ito-minimal-update .art-fv .art-official-case figure{padding:0;border:1px solid #d4eaf2;border-radius:10px}
+body.ito-minimal-update .art-fv .art-official-case figcaption{padding:10px 12px;color:#536572;font-size:13px}
+body.ito-minimal-update .art-fv .art-official-case .art-fv-notes{margin:12px 0}
+body.ito-minimal-update .art-fv .art-survey-link{color:#247b9d}
+body.ito-minimal-update .art-fv .art-scratch-reveal{background:#fff;border:1px solid #55b8da;color:#216c8a;box-shadow:0 3px 0 #cfedf6}
+body.ito-minimal-update .art-fv .art-scratch-status{color:#537788;font-size:12px}
+body.ito-minimal-update .ito-coupon-image-cta{width:96%;max-width:none;margin:16px auto;padding:0;background:none!important;box-shadow:none!important;border:0;border-radius:0;line-height:0}
+body.ito-minimal-update .ito-coupon-image-cta img{width:100%;height:auto;display:block}
+body.ito-minimal-update .ito-body-fv{background:linear-gradient(110deg,#f0fbff,#fff5fa);padding-bottom:12px}
+body.ito-minimal-update .ito-update-notes{border-color:#d4e8f0;color:#526b78}
+body.ito-minimal-update .ito-update-notes summary{color:#426d81}
+body.ito-minimal-update .ito-final-reservation{background:linear-gradient(120deg,#e9faff,#fff1f8);border-top:1px solid #d4eaf2;padding:32px 3% 24px}
+body.ito-minimal-update .ito-final-reservation h2{color:#1e647f;font-family:'Hiragino Mincho ProN','Yu Mincho',serif}
+body.ito-minimal-update .ito-final-reservation .ito-final-eyebrow{color:#d94b95}
+body.ito-minimal-update .ito-final-reservation .ito-final-note{color:#5e727d}
+body.ito-minimal-update .sticky-cta{max-width:520px;background:linear-gradient(0deg,#f7fcff 72%,#f7fcff00);padding:12px 9px max(5px,env(safe-area-inset-bottom))}
+body.ito-minimal-update .sticky-cta .ito-image-cta{display:block;width:100%;background:none!important;box-shadow:none!important;border:0!important;padding:0!important;min-height:0!important}
+body.ito-minimal-update .sticky-cta .ito-image-cta img{display:block;width:100%;height:auto;max-height:none}
+body.ito-minimal-update .art-fv-cta img,body.ito-minimal-update .ito-coupon-image-cta img{animation:juno-cta-breathe 2.6s ease-in-out infinite;transform-origin:50% 60%;will-change:transform}
+body.ito-minimal-update .art-fv-cta:hover img,body.ito-minimal-update .ito-coupon-image-cta:hover img,
+body.ito-minimal-update .art-fv-cta:focus-visible img,body.ito-minimal-update .ito-coupon-image-cta:focus-visible img{animation-play-state:paused}
+@keyframes juno-cta-breathe{0%,55%,100%{transform:scale(1)}65%{transform:scale(.98,.97)}77%{transform:scale(1.018,1.025)}88%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){body.ito-minimal-update .art-fv-cta img,body.ito-minimal-update .ito-coupon-image-cta img{animation:none;will-change:auto}}
+
+/* Emphasize the reservation offer immediately after the questionnaire. */
+body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta {
+  display: block;
+  position: relative;
+  isolation: isolate;
+  transform-origin: 50% 50%;
+  animation: ito-offer-invite 2.8s ease-in-out infinite;
+  will-change: transform;
+}
+body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta img {
+  animation: none;
+  transform: none;
+  will-change: auto;
+}
+body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 42%, #ffffff00 44%, #ffffff85 49%, #ffffff00 54%, transparent 56%) 140% 50% / 300% 100% no-repeat;
+  -webkit-mask: url("assets/cta-reservation-juno-v1.png") center / contain no-repeat;
+  mask: url("assets/cta-reservation-juno-v1.png") center / contain no-repeat;
+  animation: ito-offer-gloss 2.8s ease-in-out infinite;
+}
+body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta:focus-visible,
+body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta:active {
+  animation-play-state: paused;
+}
+body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta:focus-visible::after {
+  animation-play-state: paused;
+  opacity: 0;
+}
+@keyframes ito-offer-invite {
+  0%, 100% { transform: translateY(0) scale(.965); }
+  34% { transform: translateY(-2px) scale(1.025); }
+  54% { transform: translateY(0) scale(.99); }
+  68% { transform: translateY(-1px) scale(1.01); }
+  84% { transform: translateY(0) scale(.965); }
+}
+@keyframes ito-offer-gloss {
+  0%, 16% { background-position: 140% 50%; opacity: 0; }
+  22% { opacity: .85; }
+  55% { background-position: -40% 50%; opacity: .85; }
+  62%, 100% { background-position: -40% 50%; opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta {
+    animation: none;
+    transform: none;
+    will-change: auto;
+  }
+  body.ito-minimal-update .ito-body-fv > .ito-coupon-image-cta::after {
+    animation: none;
+    display: none;
+  }
+}
+
+/* Compact, single-line disclosure labels; full note content remains expandable. */
+body.ito-minimal-update .ito-update-notes {
+  margin-block: 6px;
+  border-radius: 8px;
+}
+body.ito-minimal-update .ito-update-notes > summary,
+body.ito-minimal-update .art-fv .art-fv-notes > summary {
+  min-height: 36px;
+  padding: 6px 10px;
+  gap: 6px;
+  font-size: clamp(12px, 3.4vw, 14px);
+  line-height: 1.4;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+body.ito-minimal-update .ito-update-notes > summary::after,
+body.ito-minimal-update .art-fv .art-fv-notes > summary::after {
+  flex: 0 0 18px;
+  width: 18px;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+}
+body.ito-minimal-update .ito-final-reservation .ito-update-notes {
+  margin-top: 8px;
+}
+/* All three official cases appear in reading order, without horizontal paging. */
+body.ito-minimal-update #case-gallery .ito-case-hint {
+  margin-bottom: 14px;
+}
+body.ito-minimal-update #case-gallery .cases {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  gap: 18px;
+  width: calc(100% - 24px);
+  margin-inline: 12px;
+  padding: 0;
+  overflow: visible;
+  scroll-snap-type: none;
+  touch-action: auto;
+}
+body.ito-minimal-update #case-gallery .cases > .case {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  flex: none;
+  scroll-snap-align: none;
+}
+body.ito-minimal-update #case-gallery .case-number {
+  padding: 10px 12px;
+  gap: 6px;
+  letter-spacing: .04em;
+}
+body.ito-minimal-update #case-gallery .ito-case-comparison {
+  letter-spacing: 0;
+}
+body.ito-minimal-update #case-gallery .case > .ito-update-notes {
+  margin: 8px;
+}
+body.ito-minimal-update #case-gallery .tcb-case-nav {
+  display: none;
+}

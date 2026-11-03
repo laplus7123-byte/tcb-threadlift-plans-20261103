@@ -1,0 +1,81 @@
+/* Thread lift: sections 06–17. Keep the existing hero and quiz untouched. */
+.theme-ito .body-redesign{--body-ink:#623c2b;--body-pink:#c63d70;color:var(--body-ink);background:#fffaf8;font-size:14px;line-height:1.85}
+.body-redesign .section{padding:42px 26px;margin:0;border:0;border-radius:0;background:#fffdfb;overflow:hidden}
+.body-redesign .section:nth-child(even){background:radial-gradient(ellipse at top,#fff9f8 10%,#ffeaf0 100%)}
+.body-redesign .body-kicker{text-align:center;font:500 11px/1.6 Georgia,serif;letter-spacing:.25em;color:#ac8644;margin:0 0 10px}
+.body-redesign .section__title{font-family:'Yu Mincho','Hiragino Mincho ProN',serif;font-size:clamp(22px,4.8vw,30px);line-height:1.65;color:#673b2b;margin:0 0 24px;padding:0 0 20px;background:transparent;border:0;text-align:center;font-weight:700}
+.body-redesign .section__title:after{content:'◆';display:block;font-size:10px;line-height:1;color:#c19a50;background:linear-gradient(90deg,transparent,#d7b76c,transparent) center/150px 1px no-repeat;margin:18px auto 0}
+.body-redesign .section__lead{font-size:14px;text-align:left;line-height:1.9;margin:0 0 24px}
+.body-redesign .section__note{font-size:11px;line-height:1.7;color:#777;margin:14px 0 0;text-align:left}
+.body-redesign .result{background:radial-gradient(ellipse at 50% 25%,#fff 25%,#ffe1ea 100%);text-align:center;border-bottom:4px double #d8b469;padding-top:30px}
+.body-redesign .result .section__eyebrow{font-size:13px;letter-spacing:.06em;color:#a66b45}
+.body-redesign .result .section__title{font-size:20px;margin-bottom:10px;padding:0}
+.body-redesign .result .section__title:after{display:none}
+.body-redesign .result .offer__name{font-size:clamp(21px,4.9vw,30px);color:#ac2957;line-height:1.5;font-family:'Yu Mincho',serif}
+.body-redesign .result-portrait{display:block;width:58%;max-width:270px;height:auto;border-radius:50%;margin:22px auto -4px;border:3px solid #fff;box-shadow:0 0 0 1px #e0ba70}
+.body-redesign .result__type{position:relative;background:linear-gradient(110deg,#bd3b66,#e57898);color:white;border:1px solid #f5cba7;border-radius:3px;font-size:clamp(14px,3.6vw,20px);padding:14px 8px;line-height:1.6;margin:0 0 22px;box-shadow:0 4px 12px #b4506b20}
+.body-redesign [data-result-body]{text-align:left;font-size:14px;line-height:1.9}
+.body-redesign .result__guide{font-size:13px;line-height:1.9;border-top:1px solid #dec6b1;margin:24px 0 0;padding-top:20px;color:#865b43;font-weight:600}
+.body-redesign .steps{display:grid;grid-template-columns:1fr;gap:28px}
+.body-redesign .step{padding:0 0 20px;border:1px solid #e0b86b;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 5px 18px #b6757620;position:relative}
+.body-redesign .mechanism-image{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#fff3f5}
+.body-redesign .step__label{background:linear-gradient(100deg,#b88531,#ecd99e,#b8883b);color:#593919;display:table;font:700 14px/1.4 Georgia,serif;letter-spacing:.12em;padding:6px 20px;margin:-15px auto 14px;position:relative;border:2px solid white;border-radius:30px}
+.body-redesign .step__title{font-size:17px;color:#b13b64;line-height:1.6;padding:0 20px;text-align:center;margin:0 0 12px}
+.body-redesign .step p{font-size:13px;padding:0 20px;margin:0;line-height:1.9}
+.body-redesign .consultation-image{display:block;width:100%;height:auto;border-radius:100px 100px 8px 8px;margin:0 0 25px;border-bottom:3px solid #d0a658}
+.body-redesign .reason-list{display:grid;gap:18px}
+.body-redesign .reason{position:relative;background:#fff8f9;border:1px solid #e5bfd0;border-radius:8px;padding:22px 20px 22px 68px;box-shadow:none}
+.body-redesign .reason__num{position:absolute;left:16px;top:20px;color:#bc9853;background:none;font:italic 32px/1 Georgia,serif;width:auto;height:auto;padding:0}
+.body-redesign .reason__title{font-size:17px;line-height:1.6;color:#ad3a61;margin:0 0 10px}
+.body-redesign .reason p{font-size:13px;line-height:1.9;margin:0}
+.body-redesign .accordion{display:grid;gap:12px}
+.body-redesign .accordion details{background:#fff;border:1px solid #e7c4ce;border-radius:8px;box-shadow:0 3px 8px #ac647410;overflow:hidden}
+.body-redesign .accordion summary{position:relative;font-size:14px;line-height:1.65;padding:19px 34px 19px 47px;color:#814631;list-style:none;cursor:pointer;background:transparent}
+.body-redesign .accordion summary::-webkit-details-marker{display:none}
+.body-redesign .accordion summary:before{content:'Q';position:absolute;left:16px;top:17px;color:#c9587d;font:italic 25px Georgia,serif}
+.body-redesign .accordion summary:after{content:'＋';position:absolute;right:12px;top:19px;color:#bc9553;font-size:17px}
+.body-redesign .accordion details[open] summary:after{content:'−'}
+.body-redesign .accordion details[open] summary{border-bottom:1px dashed #e5b6c6}
+.body-redesign .accordion details p{font-size:13px;padding:18px 20px;margin:0;line-height:1.9}
+.body-redesign .swipe-hint{text-align:right;font-size:11px;color:#ba7d55;letter-spacing:.04em}
+.body-redesign .cases{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 14px;scrollbar-color:#d3a367 #fff1e4;scrollbar-width:thin}
+.body-redesign .case{flex:0 0 92%;min-width:0;scroll-snap-align:start;border:1px solid #d9b768;border-radius:8px;background:#fff;overflow:hidden}
+.body-redesign .case-number{padding:9px 15px;color:#744b24;background:linear-gradient(100deg,#f4dda1,#fff8e1);letter-spacing:.15em;font:600 13px Georgia,serif}
+.body-redesign .case-photo{display:block;width:100%;height:auto;object-fit:contain;filter:none}
+.body-redesign .case__body{font-size:10px;line-height:1.8;padding:15px;color:#777}
+.body-redesign .case__body strong{display:block;font-size:11px;font-weight:600;color:#744d3e}
+.body-redesign [data-benefit]{background:linear-gradient(#fff3f5,#ffd8e6 50%,#fff5e8)}
+.body-redesign .benefit-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.body-redesign .benefit-card{padding:0;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;border:1px solid #d6ae62;border-radius:14px;background:#fff9f6;box-shadow:0 4px 12px #bc768b20;text-align:center}
+.body-redesign .benefit-card img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:radial-gradient(#fff,#ffe4eb)}
+.body-redesign .benefit-card__eyebrow{font-size:11px;color:#b43e69;padding:10px 3px 5px;background:#fff9f6}
+.body-redesign .benefit-card__text{flex:1;font-family:'Yu Mincho',serif;font-size:16px;line-height:1.6;font-weight:700;color:#fff;padding:10px 8px 14px;background:linear-gradient(100deg,#c44370,#e27899)}
+.body-redesign .benefit-card:last-child{grid-column:1/-1;width:65%;justify-self:center}
+.body-redesign .offer{background:radial-gradient(ellipse at top,#fffef5,#faeab9)!important;border-block:4px double #c19a4c;text-align:center}
+.body-redesign .offer__en{font:italic 26px/1.5 Georgia,serif;color:#ac8139;margin-bottom:20px}
+.body-redesign .offer__name{font-size:24px;color:#71421e}
+.body-redesign .offer__price{font-family:Georgia,'Yu Mincho',serif;font-size:84px;line-height:1.4;color:#a0701e;margin:5px auto 10px;text-shadow:1px 2px white}
+.body-redesign .offer__coupon{background:linear-gradient(120deg,#f7dc74,#fff7bf 40%,#efc450);border:4px double #ad7f2d;border-radius:10px;padding:16px 8px;line-height:1.55;font-size:clamp(19px,5vw,29px);font-weight:800;color:#714516;box-shadow:0 5px 12px #97702b25;margin:24px 0}
+.body-redesign .offer__extra{font-size:13px;line-height:1.8}
+.body-redesign .btn-cta{display:block;width:100%;padding:20px 9px;font-size:clamp(14px,3.5vw,19px);line-height:1.65;border-radius:40px;border:2px solid #fff;background:linear-gradient(#fb82a0,#d83b70);color:#fff;box-shadow:0 5px 0 #af315d,0 9px 15px #ae627c25;text-align:center}
+.body-redesign .trust-doctors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 10px;margin:25px 0}
+.body-redesign .doctor{background:#fff;border:1px solid #ead7b5;border-radius:8px;padding:12px 5px;text-align:center;min-width:0}
+.body-redesign .doctor__avatar{display:block;width:100%;max-width:128px;height:auto;aspect-ratio:1;object-fit:cover;margin:auto;border-radius:50%;border:1px solid #e1bc77}
+.body-redesign .doctor__name{font-size:14px;margin:10px 0 6px;color:#754b30}
+.body-redesign .doctor__qualification{font-size:10px;line-height:1.6;margin:0;color:#8a796d}
+.body-redesign .clinic-count{border:3px double #cca55e;padding:22px 15px;background:#fffcf4;text-align:center}
+.body-redesign .clinic-count strong{font-family:'Yu Mincho',serif;color:#95702f;font-size:26px}
+.body-redesign .clinic-count ul{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:18px 0 0;font-size:12px}
+.body-redesign .clinic-count li{border-bottom:1px solid #e9dbc3;padding:4px}
+.body-redesign .flow-list{display:grid;gap:18px;position:relative}
+.body-redesign .flow-list:before{content:'';position:absolute;top:20px;bottom:20px;left:25px;width:1px;background:#d7b675}
+.body-redesign .flow-item{position:relative;border:1px solid #ead7bb;border-radius:9px;background:#fffaf5;padding:20px 18px 20px 66px}
+.body-redesign .flow-item__num{position:absolute;left:9px;top:19px;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(#e6ce8e,#b98d42);border:3px solid #fff;color:#fff;font:22px Georgia,serif}
+.body-redesign .flow-item__title{font-size:16px;line-height:1.6;color:#a25458;margin:0 0 12px}
+.body-redesign .flow-item p{font-size:13px;line-height:1.9;margin:0}
+.body-redesign .final{background:radial-gradient(#fff,#ffdae5)!important;text-align:center;border-top:3px double #d1aa5d}
+.body-redesign [data-final-copy]{font-size:14px!important;line-height:1.9!important;font-weight:500!important}
+.theme-ito [data-body-section="17"]{display:block;background:#fff9f8;color:#777;font-size:11px;line-height:1.85;padding:26px;margin:0;border-top:1px solid #e5d2c5}
+.theme-ito .page-footer{padding-bottom:110px}
+.body-redesign :focus-visible{outline:3px solid #aa7338;outline-offset:4px}
+@media(max-width:420px){.body-redesign .section{padding:32px 18px}.body-redesign .benefit-list{gap:10px}.body-redesign .benefit-card__text{font-size:14px}.body-redesign .benefit-card__eyebrow{font-size:10px}.body-redesign .reason{padding-left:57px}.body-redesign .reason__num{left:12px;font-size:29px}.body-redesign .doctor__name{font-size:12px}.body-redesign .doctor__qualification{font-size:9px}.body-redesign .step__title{font-size:16px}.body-redesign .section__lead{font-size:13px}}
